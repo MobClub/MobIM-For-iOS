@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" rowHeight="56" id="KGk-i7-Jjw" customClass="MOBIMBaseButtonAvatarCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9X-Ta-5Zq" customClass="MOBIMAvatarButton">
+                        <rect key="frame" x="15" y="10" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="6zZ-LC-HH1"/>
+                            <constraint firstAttribute="height" constant="36" id="vVh-H2-ZrH"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="addbtn"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="群组" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgV-Y2-GEt">
+                        <rect key="frame" x="58" y="18" width="254" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="157-JT-YEQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eg8-Jl-Rjk" userLabel="line">
+                        <rect key="frame" x="15" y="54.5" width="305" height="0.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="wwq-kS-J2T"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="z9X-Ta-5Zq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="1sQ-Kq-aiH"/>
+                    <constraint firstItem="z9X-Ta-5Zq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7uI-JV-dRC"/>
+                    <constraint firstAttribute="trailing" secondItem="pgV-Y2-GEt" secondAttribute="trailing" constant="15" id="PND-cz-kJc"/>
+                    <constraint firstAttribute="trailing" secondItem="eg8-Jl-Rjk" secondAttribute="trailing" id="Qma-Sy-OaX"/>
+                    <constraint firstItem="pgV-Y2-GEt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="61" id="RDI-7T-1dI"/>
+                    <constraint firstItem="eg8-Jl-Rjk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="YND-28-Pgx"/>
+                    <constraint firstItem="pgV-Y2-GEt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nPo-23-mSg"/>
+                    <constraint firstAttribute="bottom" secondItem="eg8-Jl-Rjk" secondAttribute="bottom" constant="0.5" id="nub-Cb-WIJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarButton" destination="z9X-Ta-5Zq" id="eQe-5X-RLY"/>
+                <outlet property="lineLabel" destination="eg8-Jl-Rjk" id="pkc-oN-2bb"/>
+                <outlet property="nameLabel" destination="pgV-Y2-GEt" id="O7e-rr-xJZ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="addbtn" width="44" height="45"/>
+    </resources>
+</document>

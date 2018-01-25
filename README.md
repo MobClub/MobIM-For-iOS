@@ -1,2 +1,2 @@
-# MobIM-For-iOS
-MobIM For iOS
+# MobIM
+A Lite IMSDK provided by Mob.

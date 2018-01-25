@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="KGk-i7-Jjw" customClass="MOBIMGroupAddSingleUserCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="95.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sa7-wJ-K5R">
+                        <rect key="frame" x="15" y="15" width="46" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="MGQ-oc-h4w"/>
+                            <constraint firstAttribute="height" constant="46" id="ddH-H5-30U"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="用户名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TR0-I3-d8A">
+                        <rect key="frame" x="15" y="69.5" width="46" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="GcO-vl-0NO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1o-Yc-cOZ">
+                        <rect key="frame" x="87" y="15" width="46" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="4Qr-qy-QsI"/>
+                            <constraint firstAttribute="height" constant="46" id="f6R-4T-FFO"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="chat_adduser"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Z1o-Yc-cOZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="87" id="0OY-gY-GdJ"/>
+                    <constraint firstItem="TR0-I3-d8A" firstAttribute="leading" secondItem="Sa7-wJ-K5R" secondAttribute="leading" id="Cex-i9-GPr"/>
+                    <constraint firstItem="TR0-I3-d8A" firstAttribute="trailing" secondItem="Sa7-wJ-K5R" secondAttribute="trailing" id="G4d-b7-qES"/>
+                    <constraint firstItem="Sa7-wJ-K5R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Saw-wM-dRb"/>
+                    <constraint firstItem="Z1o-Yc-cOZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="bU0-8f-KhI"/>
+                    <constraint firstItem="Sa7-wJ-K5R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="tyy-UQ-Xjw"/>
+                    <constraint firstAttribute="bottom" secondItem="TR0-I3-d8A" secondAttribute="bottom" constant="12" id="y2W-cj-e6K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addButton" destination="Z1o-Yc-cOZ" id="c24-iO-3B1"/>
+                <outlet property="avatarView" destination="Sa7-wJ-K5R" id="lKI-Hm-6oq"/>
+                <outlet property="nameLabel" destination="TR0-I3-d8A" id="rTn-Kp-LQv"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_adduser" width="66" height="66"/>
+    </resources>
+</document>

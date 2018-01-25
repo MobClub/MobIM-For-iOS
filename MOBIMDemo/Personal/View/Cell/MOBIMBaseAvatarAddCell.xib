@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="KGk-i7-Jjw" customClass="MOBIMBaseAvatarAddCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKs-zh-IBq" customClass="MOBIMAvatarButton">
+                        <rect key="frame" x="15" y="10" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="RCh-G5-Xf1"/>
+                            <constraint firstAttribute="height" constant="36" id="iRc-7P-1KU"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="groupHead"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onC-tR-Huy">
+                        <rect key="frame" x="254" y="11" width="57" height="30"/>
+                        <color key="backgroundColor" red="0.020069960509999998" green="1" blue="0.61448519550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="57" id="ZN1-Tq-bAs"/>
+                            <constraint firstAttribute="height" constant="30" id="kV9-29-Tke"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="加入">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="群组1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90D-lD-qhJ">
+                        <rect key="frame" x="61" y="17.5" width="179" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="PUh-cF-jqb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqE-ce-msf" userLabel="line">
+                        <rect key="frame" x="15" y="54.5" width="290" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="LRV-dX-EZT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已加入" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcX-Js-j9e">
+                        <rect key="frame" x="263" y="17.5" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="BoU-ki-Pp0"/>
+                            <constraint firstAttribute="width" constant="42" id="IBA-we-8tv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="onC-tR-Huy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="A8t-Fo-SIT"/>
+                    <constraint firstItem="NcX-Js-j9e" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EEA-FM-fxZ"/>
+                    <constraint firstAttribute="bottom" secondItem="iqE-ce-msf" secondAttribute="bottom" constant="0.5" id="Hcp-Vs-Mej"/>
+                    <constraint firstAttribute="trailing" secondItem="NcX-Js-j9e" secondAttribute="trailing" constant="15" id="JNU-HE-h9t"/>
+                    <constraint firstItem="90D-lD-qhJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="V9M-8r-mfY"/>
+                    <constraint firstItem="uKs-zh-IBq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="XhZ-eb-veI"/>
+                    <constraint firstItem="90D-lD-qhJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="61" id="dRq-2b-fdh"/>
+                    <constraint firstAttribute="trailing" secondItem="90D-lD-qhJ" secondAttribute="trailing" constant="80" id="duP-lj-Ojf"/>
+                    <constraint firstItem="iqE-ce-msf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="h52-7u-bpw"/>
+                    <constraint firstItem="uKs-zh-IBq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="icl-Pv-zLX"/>
+                    <constraint firstAttribute="trailing" secondItem="onC-tR-Huy" secondAttribute="trailing" constant="9" id="jsk-gf-1e3"/>
+                    <constraint firstAttribute="trailing" secondItem="iqE-ce-msf" secondAttribute="trailing" constant="15" id="vkC-J9-6zT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addButton" destination="onC-tR-Huy" id="knb-LL-LHs"/>
+                <outlet property="avatarButton" destination="uKs-zh-IBq" id="mlp-Qj-Z8Q"/>
+                <outlet property="hasAddLabel" destination="NcX-Js-j9e" id="HMr-aN-FOd"/>
+                <outlet property="lineLabel" destination="iqE-ce-msf" id="XzR-dl-zaw"/>
+                <outlet property="nameLabel" destination="90D-lD-qhJ" id="Qdg-Wi-OYM"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="groupHead" width="32" height="32"/>
+    </resources>
+</document>

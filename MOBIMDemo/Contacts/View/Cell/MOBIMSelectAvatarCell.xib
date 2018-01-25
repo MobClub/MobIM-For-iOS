@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MOBIMSelectAvatarCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MOBIMSelectAvatarCell">
+            <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="头像1" translatesAutoresizingMaskIntoConstraints="NO" id="X4g-6a-3yN">
+                        <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="X4g-6a-3yN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BjS-qK-8FZ"/>
+                <constraint firstItem="X4g-6a-3yN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="I8R-19-RSj"/>
+                <constraint firstAttribute="bottom" secondItem="X4g-6a-3yN" secondAttribute="bottom" id="dmD-XY-sEe"/>
+                <constraint firstAttribute="trailing" secondItem="X4g-6a-3yN" secondAttribute="trailing" id="lXr-fM-2zb"/>
+            </constraints>
+            <connections>
+                <outlet property="avatarImageView" destination="X4g-6a-3yN" id="2qm-Es-IVg"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="头像1" width="130" height="130"/>
+    </resources>
+</document>
